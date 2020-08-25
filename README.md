@@ -17,4 +17,4 @@ I grapped information of the speakers using SPEAKERS.TXT and selected arbitrary 
 
 data are balanced for speakers' Genders so that would be helpful for the classification and no need for balancing the data
 
-I have done some Data Augmentation by taking random 1% of the audio files and added randomly colored noise and white noise and a slight pitch changes.
+I have done some Data Augmentation to add more variations on data by taking random 1% of the audio files and added randomly colored noise and white noise and a slight pitch changes.
