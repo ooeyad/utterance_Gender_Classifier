@@ -29,10 +29,10 @@ before building the models I have extracted the features for both solutions and 
 
 ## Approach 1 : Features Statistical Analysis with a simple Deep Neural Network.
 
-In this approach I do the following :
-1- Prepare data files paths with speakers ids and genders in a dataframe
-2- from the dataframe load each audio file for 2 seconds only.
-3- extract the features from the audio signal and calculate mean, minimum, maximum and standard deviation for such feature
+In this approach I've done the following :
+1- Prepared data files paths with speakers ids and genders in a dataframe
+2- from the dataframe I loaded each audio file for 2 seconds only.
+3- extracted the features from the audio signal and calculate mean, minimum, maximum and standard deviation for such feature
 4- features extracted are :
 *   Zero crossing rates : A measure of number of times in a given time interval/frame that the amplitude of the speech signals passes through a value of zero.
 *   Tonal centroid : The Tonal Centroids (or Tonnetz) contain harmonic content of a given audio signal.
@@ -44,3 +44,10 @@ In this approach I do the following :
 *   RMSE : root-mean-square (RMS) energy for each frame from the audio sample.
 
 5- So from all these features there are hidden information that could help classifying the signals information.
+
+## Approach 2 : MFCC features with Convolutional Neural Network.
+
+In this approach I I've done the following :
+1- Prepared data files paths with speakers ids and genders in a dataframe
+2- from the dataframe I loaded each audio file for 2 seconds only.
+3- Extraced the MFCC features for each audio, I have taken 40 
