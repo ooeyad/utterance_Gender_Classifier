@@ -19,6 +19,11 @@ data are balanced for speakers' Genders so that would be helpful for the classif
 
 I have done some Data Augmentation to add more variations on data by taking random 1% of the audio files and added randomly colored noise and white noise and a slight pitch changes.
 
+I have built two solutions to classify speakers genders from audio files :
+1- features statistical analysis with deep neural network
+2- MFCC matrix with Convolution Neural Network.
+
+before building the models I have extracted the features for both solutions and saved them in the drive, so they will be ready to use for any changes in the networks.
 
 # Classifier solution Approaches
 
