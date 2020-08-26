@@ -38,4 +38,4 @@ In this approach I do the following :
 *   Spectral centroid : Each frame of a magnitude spectrogram is normalized and treated as a distribution over frequency bins, from which the mean (centroid) is extracted per frame.
 *   RMSE : root-mean-square (RMS) energy for each frame from the audio sample.
 
-5- So from all these features there might be hidden features that could help classifying the signals information.
+5- So from all these features there are hidden features that could help classifying the signals information.
