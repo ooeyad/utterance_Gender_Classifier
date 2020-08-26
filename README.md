@@ -22,18 +22,20 @@ I have done some Data Augmentation to add more variations on data by taking rand
 
 # Classifier solution Approaches
 
-## Approach 1 : Features Statistical Analysis.
+## Approach 1 : Features Statistical Analysis with a simple Deep Neural Network.
 
 In this approach I do the following :
 1- Prepare data files paths with speakers ids and genders in a dataframe
 2- from the dataframe load each audio file for 2 seconds only.
 3- extract the features from the audio signal and calculate mean, minimum, maximum and standard deviation for such feature
 4- features extracted are :
-*   zero crossing rates
-*   tonal centroid
-*   roll-off frequency
-*   spectral flattness
-*   Spectral Contrast
-*   Spectral Bandwidth
-*   spectral centroid
-*   RMSE
+*   Zero crossing rates : A measure of number of times in a given time interval/frame that the amplitude of the speech signals passes through a value of zero.
+*   Tonal centroid : The Tonal Centroids (or Tonnetz) contain harmonic content of a given audio signal.
+*   Roll-off frequency : the rate at which attenuation increases beyond the cut-off frequency
+*   Spectral flattness : a measure to quantify how much noise-like a sound is, as opposed to being tone-like
+*   Spectral Contrast : The level difference between peaks and valleys in the spectrum
+*   Spectral Bandwidth : The difference between the upper and lower frequencies in a continuous band of frequencies.
+*   Spectral centroid : Each frame of a magnitude spectrogram is normalized and treated as a distribution over frequency bins, from which the mean (centroid) is extracted per frame.
+*   RMSE : root-mean-square (RMS) energy for each frame from the audio sample.
+
+5- So from all these features there might be hidden features that could help classifying the signals information.
