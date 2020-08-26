@@ -60,7 +60,7 @@ In this approach I I've implemented the following steps :
 
 Model: "Model 1 (1D CNN)"
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Paramnum 
 =================================================================
 conv1d_32 (Conv1D)           (None, 3480, 16)          112       
 _________________________________________________________________
@@ -96,7 +96,7 @@ Non-trainable params: 0
 
 Model: "Model 2 (2D CNN)"
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Paramnum  
 =================================================================
 conv2d_22 (Conv2D)           (None, 35, 82, 16)        592       
 _________________________________________________________________
