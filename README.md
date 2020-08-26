@@ -31,8 +31,8 @@ In this approach I do the following :
 4- features extracted are :
 *   Zero crossing rates : A measure of number of times in a given time interval/frame that the amplitude of the speech signals passes through a value of zero.
 *   Tonal centroid : The Tonal Centroids (or Tonnetz) contain harmonic content of a given audio signal.
-*   Roll-off frequency : the rate at which attenuation increases beyond the cut-off frequency
-*   Spectral flattness : a measure to quantify how much noise-like a sound is, as opposed to being tone-like
+*   Roll-off frequency : The rate at which attenuation increases beyond the cut-off frequency
+*   Spectral flattness : A measure to quantify how much noise-like a sound is, as opposed to being tone-like
 *   Spectral Contrast : The level difference between peaks and valleys in the spectrum
 *   Spectral Bandwidth : The difference between the upper and lower frequencies in a continuous band of frequencies.
 *   Spectral centroid : Each frame of a magnitude spectrogram is normalized and treated as a distribution over frequency bins, from which the mean (centroid) is extracted per frame.
