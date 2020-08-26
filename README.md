@@ -54,78 +54,8 @@ In this approach I I've implemented the following steps :
 2- from the dataframe I loaded each audio file for 2 seconds only.
 3- Extraced the MFCC features for each audio, I have taken 40 mfccs and framed them to 87 frame.
 5- I have built a CNN for two options : 1D and 2D 
-  - 1D CNN : The final shape of the matrix is (number_of_samples, (40 * 87) ,1) and the structure is shown below notebook.
+  - 1D CNN : The final shape of the matrix is (number_of_samples, (40 * 87) ,1) and the structure is shown gender_classifier.ipynb notebook.
   - 2D CNN : The final shape of the matrix is (number_of_samples, 40 , 87 ,1) and the structure is shown in the gender_classifier.ipynb  notebook.
 6- An early sopping, learning rate schedule and checkpoint were added to the callbacks list, the best model is saved automatically.
 
-Model: "Model 1 (1D CNN)"
-_________________________________________________________________
-Layer (type)                 Output Shape              Paramnum 
-=================================================================
-conv1d_32 (Conv1D)           (None, 3480, 16)          112       
-_________________________________________________________________
-max_pooling1d_32 (MaxPooling (None, 1740, 16)          0         
-_________________________________________________________________
-conv1d_33 (Conv1D)           (None, 1740, 8)           776       
-_________________________________________________________________
-max_pooling1d_33 (MaxPooling (None, 870, 8)            0         
-_________________________________________________________________
-conv1d_34 (Conv1D)           (None, 870, 16)           784       
-_________________________________________________________________
-max_pooling1d_34 (MaxPooling (None, 435, 16)           0         
-_________________________________________________________________
-conv1d_35 (Conv1D)           (None, 435, 8)            776       
-_________________________________________________________________
-max_pooling1d_35 (MaxPooling (None, 218, 8)            0         
-_________________________________________________________________
-time_distributed_8 (TimeDist (None, 218, 8)            0         
-_________________________________________________________________
-dropout_38 (Dropout)         (None, 218, 8)            0         
-_________________________________________________________________
-flatten_24 (Flatten)         (None, 1744)              0         
-_________________________________________________________________
-dense_61 (Dense)             (None, 256)               446720    
-_________________________________________________________________
-output_layer (Dense)         (None, 1)                 257       
-=================================================================
-Total params: 449,425
-Trainable params: 449,425
-Non-trainable params: 0
 
-
-
-Model: "Model 2 (2D CNN)"
-_________________________________________________________________
-Layer (type)                 Output Shape              Paramnum  
-=================================================================
-conv2d_22 (Conv2D)           (None, 35, 82, 16)        592       
-_________________________________________________________________
-max_pooling2d_22 (MaxPooling (None, 18, 41, 16)        0         
-_________________________________________________________________
-batch_normalization_22 (Batc (None, 18, 41, 16)        64        
-_________________________________________________________________
-conv2d_23 (Conv2D)           (None, 13, 36, 16)        9232      
-_________________________________________________________________
-max_pooling2d_23 (MaxPooling (None, 7, 18, 16)         0         
-_________________________________________________________________
-batch_normalization_23 (Batc (None, 7, 18, 16)         64        
-_________________________________________________________________
-conv2d_24 (Conv2D)           (None, 5, 16, 8)          1160      
-_________________________________________________________________
-max_pooling2d_24 (MaxPooling (None, 3, 8, 8)           0         
-_________________________________________________________________
-batch_normalization_24 (Batc (None, 3, 8, 8)           32        
-_________________________________________________________________
-flatten_22 (Flatten)         (None, 192)               0         
-_________________________________________________________________
-dropout_36 (Dropout)         (None, 192)               0         
-_________________________________________________________________
-dense_60 (Dense)             (None, 256)               49408     
-_________________________________________________________________
-dropout_37 (Dropout)         (None, 256)               0         
-_________________________________________________________________
-output_layer (Dense)         (None, 1)                 257       
-=================================================================
-Total params: 60,809
-Trainable params: 60,729
-Non-trainable params: 80
