@@ -22,9 +22,8 @@ I have done some Data Augmentation to add more variations on data by taking rand
 
 # Classifier solution Approaches
 
-## Approach 1
+## Approach 1 : Features Statistical Analysis.
 
-### Features Statistical Analysis.
 In this approach I do the following :
 1- Prepare data files paths with speakers ids and genders in a dataframe
 2- from the dataframe load each audio file for 2 seconds only.
