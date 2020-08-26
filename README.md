@@ -58,4 +58,6 @@ In this approach I I've implemented the following steps :
   - 2D CNN : The final shape of the matrix is (number_of_samples, 40 , 87 ,1) and the structure is shown in the gender_classifier.ipynb  notebook.
 6- An early sopping, learning rate schedule and checkpoint were added to the callbacks list, the best model is saved automatically.
 
+## Approaches comparison
+
 
