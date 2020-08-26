@@ -18,3 +18,23 @@ I grapped information of the speakers using SPEAKERS.TXT and selected arbitrary 
 data are balanced for speakers' Genders so that would be helpful for the classification and no need for balancing the data
 
 I have done some Data Augmentation to add more variations on data by taking random 1% of the audio files and added randomly colored noise and white noise and a slight pitch changes.
+
+
+# Classifier solution Approaches
+
+## Approach 1
+
+### Features Statistical Analysis.
+In this approach I do the following :
+1- Prepare data files paths with speakers ids and genders in a dataframe
+2- from the dataframe load each audio file for 2 seconds only.
+3- extract the features from the audio signal and calculate mean, minimum, maximum and standard deviation for such feature
+4- features extracted are :
+*   zero crossing rates
+*   tonal centroid
+*   roll-off frequency
+*   spectral flattness
+*   Spectral Contrast
+*   Spectral Bandwidth
+*   spectral centroid
+*   RMSE
