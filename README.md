@@ -59,7 +59,7 @@ In this approach I I've implemented the following steps :
 6- An early sopping, learning rate schedule and checkpoint were added to the callbacks list, the best model is saved automatically.
 
 ## Approaches comparison
-from the table "approaches_comparisons.doc" the comparison shows that the best model is Approach 2 (model 2 (2D) )
+from the table "Comparisons.docx" the comparison shows that the best model is Approach 2 (model 2 (2D) )
 as it has the best F1 Score from all, plus it has fewer trainable paremeters.
 
 So I select Model_2 for the solution to build.
