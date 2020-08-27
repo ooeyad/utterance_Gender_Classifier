@@ -74,7 +74,7 @@ all tasks including : data extract, data transformation, exploratory data analys
 - it will return a single value indicating the gender of the speaker (M: for Male, F: for Female)
 Example : 
 
-- from gender_classifier import Speakers_Gender_Classifier
-- clf = Speakers_Gender_Classifier("/content")
-- file_path = '/content/Recording_5.m4a'
-- clf.predict_gender(file_path)
+from gender_classifier import Speakers_Gender_Classifier
+clf = Speakers_Gender_Classifier("/content")
+file_path = '/content/Recording_5.m4a'
+clf.predict_gender(file_path)
