@@ -75,6 +75,9 @@ all tasks including : data extract, data transformation, exploratory data analys
 Example : 
 
 from gender_classifier import Speakers_Gender_Classifier
+
 clf = Speakers_Gender_Classifier("/content")
+
 file_path = '/content/Recording_5.m4a'
+
 clf.predict_gender(file_path)
