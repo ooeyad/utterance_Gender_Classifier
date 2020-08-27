@@ -70,6 +70,6 @@ all tasks including : data extract, data transformation, exploratory data analys
 - load the model files mfcc_model_2.h5, mfcc_model_2.json into a specific location that is accessible to your program.
 - import gender_classifier.py
 - instantiate the class by passing the directory where both files mfcc_model_2.h5, mfcc_model_2.json are located.
-- call predict_gender and pass any audio file path that of an utterance.
+- call predict_gender and pass any audio file path of an utterance.
 - it will return a single value indicating the gender of the speaker (M: for Male, F: for Female)
 
