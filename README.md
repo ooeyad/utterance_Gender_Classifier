@@ -64,3 +64,4 @@ as it has the best F1 Score from all, plus it has fewer trainable paremeters.
 
 So I select Model_2 for the solution to build.
 
+all work is done on gender_classifier.ipynb jupyter Notebook.
