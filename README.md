@@ -64,4 +64,12 @@ as it has the best F1 Score from all, plus it has fewer trainable paremeters.
 
 So I select Model_2 for the solution to build.
 
-all work is done on gender_classifier.ipynb jupyter Notebook.
+all tasks including : data extract, data transformation, exploratory data analysis, model training and experiments were done in gender_classifier.ipynb jupyter Notebook in google colab.
+
+# How to use gender_classifier
+- load the model files mfcc_model_2.h5, mfcc_model_2.json into a specific location that is accessible to your program.
+- import gender_classifier.py
+- instantiate the class by passing the directory where both files mfcc_model_2.h5, mfcc_model_2.json are located.
+- call predict_gender and pass any audio file path that of an utterance.
+- it will return a single value indicating the gender of the speaker (M: for Male, F: for Female)
+
